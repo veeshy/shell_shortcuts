@@ -1,0 +1,5 @@
+* Find files in folder tree and tar them
+
+find . -name "combined_mean.h5" -o  -name "gfa9a1_k_store.h5" -o -name "input_store.h5" | xargs tar zcfv results.tar.gz
+
+* 

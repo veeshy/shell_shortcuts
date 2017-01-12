@@ -2,4 +2,8 @@
 
 find . -name "combined_mean.h5" -o  -name "gfa9a1_k_store.h5" -o -name "input_store.h5" | xargs tar zcfv results.tar.gz
 
-* 
+* Find/replace in all files a given thing w/o creating backups (unix)
+sed -i 's/replace_this/with_this/' in_this_file_gen_*
+
+*
+

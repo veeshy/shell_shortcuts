@@ -5,5 +5,10 @@ find . -name "combined_mean.h5" -o  -name "gfa9a1_k_store.h5" -o -name "input_st
 * Find/replace in all files a given thing w/o creating backups (unix)
 sed -i 's/replace_this/with_this/' in_this_file_gen_*
 
-*
+* Create git bundles for distribution when no internet
+** on local machine:
+git bundle create file.bundle branch_name
+** on target machine:
+git clone file.bundle -b branch_name folder_to_make
 
+*

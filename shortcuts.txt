@@ -1,3 +1,9 @@
+* Create a folder list then add a file to the end of each line with a space between folder and filename
+
+find `pwd` -type d  > f.txt
+awk '{print $0 " FILENAME_TO_ADD";}' f.txt > files.txt
+rm f.txt
+
 * Find files in folder tree and tar them
 
 find . -name "combined_mean.h5" -o  -name "gfa9a1_k_store.h5" -o -name "input_store.h5" | xargs tar zcfv results.tar.gz
